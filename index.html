@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Digital Skills Program</title>
+    <style>
+        :root {
+            --primary: #005a9c;
+            --secondary: #00b4d8;
+            --dark: #2b2d42;
+            --light: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* --- NEW NAVIGATION BAR STYLING --- */
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+        .nav-brand {
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 1.5rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+        /* --- END OF NAV STYLING --- */
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .welcome-text {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        .card p {
+            color: #555;
+            flex-grow: 1;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 0.8rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.2s;
+        }
+        .btn:hover {
+            background-color: #004475;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            color: #777;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Added Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">Pule Digital Skills</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="https://nemisa.co.za" target="_blank" rel="noopener noreferrer">NEMISA</a></li>
+                <li><a href="https://cut.ac.za" target="_blank" rel="noopener noreferrer">CUT Online</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Community Digital Skills Program</h1>
+        <p>Your Gateway to a Career in Technology</p>
+    </header>
+
+    <div class="container">
+        <p class="welcome-text">Welcome students! Click on any of the courses below to open your learning portal on Cisco Skills for All and begin your lessons.</p>
+        
+        <div class="grid">
+            <!-- Course 1 -->
+            <div class="card">
+                <div>
+                    <h2>1. Introduction to Cybersecurity</h2>
+                    <p>Learn how to protect your digital life, understand common cyber threats, and explore the basics of data defense.</p>
+                </div>
+                <a href="https://skillsforall.com" target="_blank" class="btn">Start Cybersecurity Course</a>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="card">
+                <div>
+                    <h2>2. Computer Hardware Basics</h2>
+                    <p>Discover what goes on inside a computer. Learn about the motherboard, CPU, RAM, storage, and how to troubleshoot devices.</p>
+                </div>
+                <a href="https://skillsforall.com" target="_blank" class="btn">Start Hardware Course</a>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="card">
+                <div>
+                    <h2>3. Networking Basics</h2>
+                    <p>Understand how computers talk to each other. Learn about IP addresses, routers, switches, and how the internet works.</p>
+                </div>
+                <a href="https://skillsforall.com" target="_blank" class="btn">Start Networking Course</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pule Digital Skills Initiative. Empowering our community through technology.</p>
+    </footer>
+
+</body>
+  </html>
+          
